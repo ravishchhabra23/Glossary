@@ -1,0 +1,5 @@
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryLogging\obj\Debug\GlossaryLogging.csprojResolveAssemblyReference.cache
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryLogging\bin\Debug\GlossaryLogging.dll
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryLogging\bin\Debug\GlossaryLogging.pdb
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryLogging\obj\Debug\GlossaryLogging.dll
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryLogging\obj\Debug\GlossaryLogging.pdb

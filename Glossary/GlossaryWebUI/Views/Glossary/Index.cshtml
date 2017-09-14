@@ -1,0 +1,45 @@
+﻿@model PagedList.IPagedList<GlossaryWebUI.Models.GlossaryModel>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-login">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                <div style="overflow-x:auto;">
+                                    <table class="mytable">
+                                        <tr>
+                                            <th>Term</th>
+                                            <th>Definition</th>
+                                            <th></th>
+                                        </tr>
+                                        @foreach (var row in Model)
+                                        {
+                                            <tr id="tr@(row.TermId)">
+                                                <td>@row.Term</td>
+                                                <td>@row.Definition</td>
+                                                <td>
+                                                    @Html.ActionLink("Edit", "Edit", "Glossary", new { id = @row.TermId }, new { @class = "glyphicon glyphicon-edit" })
+                                                @Ajax.ActionLink("Delete", "Delete", "Glossary", new { id = @row.TermId }, new AjaxOptions() { UpdateTargetId = "tr" + @row.TermId, Confirm = "Do you want to delete?", HttpMethod = "POST" }, new { @class = "glyphicon glyphicon-trash" })
+                                            </td>
+                                        </tr>
+                                        }
+                                    </table>
+                            </div>
+                            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+                            @Html.PagedListPager(Model, page => Url.Action("Index",
+                            new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+                       </div>
+                   </div>
+               </div>
+            </div>
+         </div>
+     </div>
+</div>

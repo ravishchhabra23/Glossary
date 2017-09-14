@@ -1,0 +1,37 @@
+﻿@model GlossaryWebUI.Models.GlossaryModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("Delete", "Glossary", FormMethod.Post, new { id = "glossary-form" }))
+{
+    @Html.ValidationSummary(true)
+
+    @Html.AntiForgeryToken()
+    <br />
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div style="overflow-x:auto;">
+                <table class="mytable">
+                    <tr>
+                        <th>Term</th>
+                        <th>Definition</th>
+                    </tr>
+                    
+                        <tr>
+                            <td>@Model.Term</td>
+                            <td>@Model.Definition</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+            <!--  col-md-6   -->
+        </div>
+    <br />
+    
+    <button type="submit" value="submit" class="btn btn-primary">Delete</button>
+</div>
+}

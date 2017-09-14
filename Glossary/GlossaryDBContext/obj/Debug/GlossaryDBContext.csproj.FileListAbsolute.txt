@@ -1,0 +1,10 @@
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\bin\Debug\GlossaryDBContext.dll.config
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\bin\Debug\GlossaryDBContext.dll
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\bin\Debug\GlossaryDBContext.pdb
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\bin\Debug\EntityFramework.dll
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\bin\Debug\EntityFramework.SqlServer.dll
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\bin\Debug\EntityFramework.xml
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\bin\Debug\EntityFramework.SqlServer.xml
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\obj\Debug\GlossaryDBContext.dll
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\obj\Debug\GlossaryDBContext.pdb
+F:\Study\Projects\Personal\LevoTest\PartB\PartB\GlossaryDBContext\obj\Debug\GlossaryDBContext.csprojResolveAssemblyReference.cache

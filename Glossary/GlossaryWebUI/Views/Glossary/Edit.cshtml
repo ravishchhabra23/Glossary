@@ -1,0 +1,18 @@
+﻿@model GlossaryWebUI.Models.GlossaryModel
+
+@{
+    ViewBag.Title = "Edit GLossary";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("Edit", "Glossary", FormMethod.Post, new { id = "glossary-form" }))
+{
+    @Html.ValidationSummary(true)
+
+    @Html.AntiForgeryToken()
+
+    @Html.Partial("~/Views/Glossary/Partial/SaveGlossary.cshtml", Model);
+}
+
+
