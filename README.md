@@ -1,4 +1,6 @@
 #Glossary
+
+
 Entity Framework with Repository Pattern for CRUD operations to achieve low coupling between components.
 RestfulWeb API that interacts with Entity Framework.
 Asynchronous call to API using Task based programming.
