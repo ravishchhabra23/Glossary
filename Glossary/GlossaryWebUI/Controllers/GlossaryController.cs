@@ -13,7 +13,7 @@ namespace GlossaryWebUI.Controllers
         private IApiRestClient _apiRestClient;
         private readonly ISessionHelper _sessionHelper;
         
-
+        
         public GlossaryController(ISessionHelper sessionHelper, IApiRestClient apiRestClient)
         {
             _sessionHelper = sessionHelper;
@@ -26,6 +26,7 @@ namespace GlossaryWebUI.Controllers
 
             Task <IEnumerable<GlossaryModel>> glossary = _apiRestClient.GetGlossaries();
             glossary.Wait();
+            //the paged list is returned to the view
             return View(glossary.Result.ToPagedList(pageNumber, pageSize));
         }
 
